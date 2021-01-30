@@ -1,0 +1,17 @@
+.jc {
+  &-c {
+    justify-content: center;
+  }
+  &-fe {
+    justify-content: flex-end;
+  }
+  &-fs {
+    justify-content: flex-start;
+  }
+  &-sa {
+    justify-content: space-around;
+  }
+  &-sb {
+    justify-content: space-between;
+  }
+}

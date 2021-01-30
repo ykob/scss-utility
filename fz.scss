@@ -1,0 +1,5 @@
+@for $i from 8 through 48 {
+  .fz-#{$i} {
+    font-size: $i * 1px;
+  }
+}
