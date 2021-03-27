@@ -1,0 +1,14 @@
+.ov {
+  &-v {
+    overflow: visible;
+  }
+  &-h {
+    overflow: hidden;
+  }
+  &-s {
+    overflow: scroll;
+  }
+  &-a {
+    overflow: auto;
+  }
+}
