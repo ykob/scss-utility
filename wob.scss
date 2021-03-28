@@ -1,0 +1,11 @@
+.wob {
+  &-n {
+    word-break: normal;
+  }
+  &-k {
+    word-break: keep-all;
+  }
+  &-ba {
+    word-break: break-all;
+  }
+}
