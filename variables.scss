@@ -1,0 +1,198 @@
+$spacer: 4px;
+$spacers: ();
+@for $i from 1 through 16 {
+  $spacers: map-merge($spacers, ($i: $spacer * $i))
+}
+$font-size: (
+  px: (8, 9, 10, 12, 14, 16, 18, 20, 24, 28, 32, 36, 40, 48, 56)
+);
+$font-sizes: ();
+@each $var in map-get($font-size, px) {
+  $font-sizes: map-merge($font-sizes, ($var: #{$var}px))
+}
+$font-weights: ();
+@for $i from 1 through 7 {
+  $font-weights: map-merge($font-weights, ($i: $i * 100))
+}
+
+$utilities: (
+  'align-items': (
+    class: 'ai',
+    property: align-items,
+    values: (
+      b: baseline,
+      c: center,
+      fe: flex-end,
+      fs: flex-start,
+      s: stretch
+    )
+  ),
+  'cursor': (
+    class: 'cur',
+    property: cursor,
+    values: (
+      a: auto,
+      d: default,
+      c: crosshair,
+      ha: hand,
+      he: help,
+      m: move,
+      p: pointer,
+      t: text
+    )
+  ),
+  'display': (
+    class: 'd',
+    property: display,
+    values: (
+      n: none,
+      b: block,
+      f: flex,
+      'if': inline-flex,
+      i: inline,
+      ib: inline-block,
+      li: list-item,
+      ri: run-in,
+      cp: compact,
+      tb: table,
+      itb: inline-table,
+      tbcp: table-caption,
+      tbcl: table-column,
+      tbclg: table-column-group,
+      tbhg: table-header-group,
+      tbfg: table-footer-group,
+      tbr: table-row,
+      tbrg: table-row-group,
+      tbc: table-cell,
+      rb: ruby,
+      rbb: ruby-base,
+      rbbg: ruby-base-group,
+      rbt: ruby-text,
+      rbtg: ruby-text-group
+    )
+  ),
+  'flex-direction': (
+    class: 'fxd',
+    property: flex-direction,
+    values: (
+      c: column,
+      cr: column-reverse,
+      r: row,
+      rr: row-reverse
+    )
+  ),
+  'flex-wrap': (
+    class: 'fxw',
+    property: flex-wrap,
+    values: (
+      n: nowrap,
+      w: wrap,
+      wr: wrap-reverse
+    )
+  ),
+  'font-size': (
+    class: 'fz',
+    property: font-size,
+    values: $font-sizes
+  ),
+  'font-weight': (
+    class: 'fw',
+    property: font-weight,
+    values: $font-weights
+  ),
+  'justify-content': (
+    class: 'fxd',
+    property: justify-content,
+    values: (
+      c: center,
+      fe: flex-end,
+      fs: flex-start,
+      sa: space-around,
+      sb: space-between
+    )
+  ),
+  'margin-top': (
+    class: 'mt',
+    property: margin-top,
+    values: $spacers
+  ),
+  'margin-bottom': (
+    class: 'mb',
+    property: margin-bottom,
+    values: $spacers
+  ),
+  'margin-right': (
+    class: 'mr',
+    property: margin-right,
+    values: $spacers
+  ),
+  'margin-left': (
+    class: 'ml',
+    property: margin-left,
+    values: $spacers
+  ),
+  'margin-x': (
+    class: 'mx',
+    property: margin-right margin-left,
+    values: $spacers
+  ),
+  'margin-y': (
+    class: 'my',
+    property: margin-top margin-bottom,
+    values: $spacers
+  ),
+  'margin': (
+    class: 'm',
+    property: margin,
+    values: $spacers
+  ),
+  'overflow': (
+    class: 'ov',
+    property: overflow,
+    values: (
+      v: visible,
+      h: hidden,
+      s: scroll,
+      a: auto
+    )
+  ),
+  'pointer-events': (
+    class: 'pe',
+    property: pointer-events,
+    values: (
+      a: auto,
+      n: none
+    )
+  ),
+  'text-align': (
+    class: 'ta',
+    property: text-align,
+    values: (
+      l: left,
+      c: center,
+      r: right,
+      j: justify
+    )
+  ),
+  'text-transform': (
+    class: 'tt',
+    property: text-transform,
+    values: (
+      n: none,
+      c: capitalize,
+      u: uppercase,
+      l: lowercase
+    )
+  ),
+  'white-space': (
+    class: 'whs',
+    property: white-space,
+    values: (
+      n: normal,
+      p: pre,
+      nw: nowrap,
+      pw: pre-wrap,
+      pl: pre-line
+    )
+  )
+);
