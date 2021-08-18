@@ -194,5 +194,12 @@ $utilities: (
       pw: pre-wrap,
       pl: pre-line
     )
+  ),
+  'width': (
+    class: 'w',
+    property: width,
+    values: (
+      100p: '100%'
+    )
   )
 );
