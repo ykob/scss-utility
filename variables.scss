@@ -14,6 +14,7 @@ $font-weights: ();
 @for $i from 1 through 7 {
   $font-weights: map-merge($font-weights, ($i: $i * 100))
 }
+$margin-values: map-merge($spacers, (a: 'auto'));
 
 $utilities: (
   'align-items': (
@@ -114,37 +115,37 @@ $utilities: (
   'margin-top': (
     class: 'mt',
     property: margin-top,
-    values: $spacers
+    values: $margin-values
   ),
   'margin-bottom': (
     class: 'mb',
     property: margin-bottom,
-    values: $spacers
+    values: $margin-values
   ),
   'margin-right': (
     class: 'mr',
     property: margin-right,
-    values: $spacers
+    values: $margin-values
   ),
   'margin-left': (
     class: 'ml',
     property: margin-left,
-    values: $spacers
+    values: $margin-values
   ),
   'margin-x': (
     class: 'mx',
     property: margin-right margin-left,
-    values: $spacers
+    values: $margin-values
   ),
   'margin-y': (
     class: 'my',
     property: margin-top margin-bottom,
-    values: $spacers
+    values: $margin-values
   ),
   'margin': (
     class: 'm',
     property: margin,
-    values: $spacers
+    values: $margin-values
   ),
   'overflow': (
     class: 'ov',
