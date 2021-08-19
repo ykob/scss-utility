@@ -1,6 +1,6 @@
 $spacer: 4px;
 $spacers: ();
-@for $i from 1 through 16 {
+@for $i from 0 through 16 {
   $spacers: map-merge($spacers, ($i: $spacer * $i))
 }
 $font-size: (
