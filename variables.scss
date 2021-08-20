@@ -82,6 +82,13 @@ $utilities: (
       rr: row-reverse
     )
   ),
+  'flex-shrink': (
+    class: 'fxsh',
+    property: flex-shrink,
+    values: (
+      0: 0,
+    )
+  ),
   'flex-wrap': (
     class: 'fxw',
     property: flex-wrap,
