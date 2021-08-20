@@ -108,6 +108,13 @@ $utilities: (
     property: font-weight,
     values: $font-weights
   ),
+  'height': (
+    class: 'h',
+    property: height,
+    values: (
+      100p: '100%'
+    )
+  ),
   'justify-content': (
     class: 'jc',
     property: justify-content,
