@@ -111,8 +111,12 @@ $utilities: (
   'height': (
     class: 'h',
     property: height,
-    values: (
-      100p: '100%'
+    values: map-merge(
+      $spacers,
+      (
+        100p: '100%',
+        a: 'auto'
+      )  
     )
   ),
   'justify-content': (
@@ -213,8 +217,12 @@ $utilities: (
   'width': (
     class: 'w',
     property: width,
-    values: (
-      100p: '100%'
+    values: map-merge(
+      $spacers,
+      (
+        100p: '100%',
+        a: 'auto'
+      )  
     )
   )
 );
