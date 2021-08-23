@@ -28,6 +28,11 @@ $utilities: (
       s: stretch
     )
   ),
+  'color': (
+    class: 'c',
+    property: color,
+    values: $colors
+  ),
   'cursor': (
     class: 'cur',
     property: cursor,
