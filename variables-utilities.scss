@@ -180,6 +180,26 @@ $utilities: (
       a: auto
     )
   ),
+  'overflow-x': (
+    class: 'ovx',
+    property: overflow-x,
+    values: (
+      v: visible,
+      h: hidden,
+      s: scroll,
+      a: auto
+    )
+  ),
+  'overflow-y': (
+    class: 'ovy',
+    property: overflow-y,
+    values: (
+      v: visible,
+      h: hidden,
+      s: scroll,
+      a: auto
+    )
+  ),
   'pointer-events': (
     class: 'pe',
     property: pointer-events,
