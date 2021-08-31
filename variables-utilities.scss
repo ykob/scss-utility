@@ -28,6 +28,11 @@ $utilities: (
       s: stretch
     )
   ),
+  'background-color': (
+    class: 'bgc',
+    property: background-color,
+    values: $colors
+  ),
   'color': (
     class: 'c',
     property: color,
