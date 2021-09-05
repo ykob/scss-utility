@@ -223,6 +223,16 @@ $utilities: (
       j: justify
     )
   ),
+  'text-decoration': (
+    class: 'td',
+    property: text-decoration,
+    values: (
+      n: none,
+      u: underline,
+      o: overline,
+      l: line-through
+    )
+  )
   'text-transform': (
     class: 'tt',
     property: text-transform,
