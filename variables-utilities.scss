@@ -264,5 +264,14 @@ $utilities: (
         a: 'auto'
       )  
     )
+  ),
+  'word-break': (
+    class: 'wob',
+    property: word-break,
+    values: (
+      n: normal,
+      k: keep-all,
+      ba: break-all
+    )
   )
 );
